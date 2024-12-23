@@ -1,0 +1,16 @@
+#particle canvas {
+    z-index: -20;
+    /* Ensure particles stay behind */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    /* Use fixed positioning to prevent affecting other elements */
+    top: 0;
+    left: 0;
+}
+
+section {
+    position: relative;
+    z-index: 1000;
+    /* Bring sections above the particles */
+}

@@ -1,0 +1,105 @@
+.home-container{
+    background-color:black;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+    border: 5px solid #ea580c;
+    margin-top: 144px;
+    box-shadow: 0 0 55px red;
+}
+
+.photo-container:hover{
+    box-shadow: 0 0 80px red;
+}
+
+.my-photo{
+    width: 300px;
+    height: 300px;
+    
+    
+}
+
+.info-container{
+    /* border: 2px solid #ea580c; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.info{
+    margin: 20px 0;
+}
+
+.first-heading{
+    font-size:50px;
+    margin-top:144px;
+}
+
+.second-heading{
+    font-size:25px;
+}
+
+.my-btn{
+    /* padding: 5px; */
+    width: 120px;
+    height: 40px;
+    margin: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color:black;
+    border: 2px solid #ea580c;
+    color:  #ea580c;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.my-btn:hover{
+    background-color: #ea580c;
+    color:black;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        /* Starting position */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up slightly */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Return to the original position */
+    }
+}
+
+.icon {
+    font-size: 25px;
+    margin: 10px;
+    border: 2px solid #ea580c;
+    border-radius: 50%;
+    padding: 10px;
+    color: lightblue;
+    cursor: pointer;
+    animation: bounce 1s ease-in-out infinite;
+    /* Apply bounce animation */
+}
+
+.icon:hover {
+    background-color: #ea580c;
+    color: black;
+}

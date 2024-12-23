@@ -1,0 +1,38 @@
+/* Footer Container */
+.footer-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    /* border-top: 2px solid #ff6600; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+    
+   
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    /* margin-top: 30px; */
+    font-size: 0.85rem;
+    color: #ccc;
+
+}
+
+.icon {
+    font-size: 25px;
+    margin: 10px;
+    border: 2px solid #ea580c;
+    border-radius: 50%;
+    padding: 10px;
+    color: lightblue;
+
+}
+.footermain{
+    padding-top:40px;
+    background-color: black;
+    opacity: 0.9;
+    
+}
