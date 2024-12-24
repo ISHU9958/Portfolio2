@@ -1,13 +1,16 @@
 .education-container {
-    background-color: #111;
+    /* background-color: #111; */
+    background-color: black;
     color: white;
     width: 100%;
     min-height: 100vh;
-    padding: 40px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    /* Adds space between elements */
 }
 
 .education-tag {
@@ -15,6 +18,8 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 40px;
+    text-align: center;
+    /* Centers the text */
 }
 
 .education-cards {
@@ -24,6 +29,8 @@
     align-items: center;
     width: 100%;
     max-width: 1200px;
+    padding: 10px;
+    /* Adds inner padding for better spacing */
 }
 
 .education-card {
@@ -34,6 +41,8 @@
     max-width: 600px;
     box-shadow: 0 4px 15px rgba(255, 87, 34, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Prevents content overflow */
 }
 
 .education-card:hover {
@@ -45,6 +54,8 @@
     padding: 20px;
     background: #333;
     border-radius: 15px 15px 0 0;
+    text-align: center;
+    /* Centers the text */
 }
 
 .card-header h3 {
@@ -61,6 +72,8 @@
 
 .card-body {
     padding: 20px;
+    text-align: center;
+    /* Centers the body text */
 }
 
 .card-body p {
@@ -71,15 +84,46 @@
 
 @media (max-width: 768px) {
     .education-cards {
-        width: 100%;
-        padding: 10px;
+        flex-direction: column;
+        /* Maintains a vertical layout */
+        gap: 15px;
+        /* Adjusts spacing for smaller screens */
     }
 
     .education-card {
         width: 100%;
+        max-width: none;
+        /* Allows full width on smaller screens */
     }
 
     .education-tag {
         font-size: 2rem;
+        /* Scales down the heading */
+        margin-bottom: 20px;
+        /* Reduces margin for smaller screens */
+    }
+
+    .card-header h3,
+    .card-header h4 {
+        font-size: 1.2rem;
+        /* Adjusts font size */
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+        /* Reduces text size slightly */
+    }
+}
+
+@media (min-width: 1024px) {
+    .education-cards {
+        flex-direction: row;
+        /* Displays cards in a row for larger screens */
+        flex-wrap: wrap;
+        /* Allows wrapping to the next line */
+        justify-content: center;
+        /* Centers the row layout */
+        gap: 30px;
+        /* Increases spacing between cards */
     }
 }

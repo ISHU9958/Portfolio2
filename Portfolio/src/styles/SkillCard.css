@@ -3,24 +3,20 @@
     width: 200px;
     height: 300px;
     border: 2px solid #ea580c;
-    box-shadow: 0 10px 5px red,
-        -5px 0 2px red,
-        /* Bottom shadow */
-        5px 0 2px #ea580c;
-    /* Right shadow */
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
+    /* Softer shadow */
     border-radius: 15px;
     margin: 15px;
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* Transition for scaling and shadow */
+    /* Smooth transitions */
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-    /* Slightly scale the card */
-    box-shadow: 0 15px 20px red, -5px 0 2px red, 5px 0 2px #ea580c;
-    /* Increase shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.7);
+    /* Enhanced shadow effect */
 }
 
 .skill-image {

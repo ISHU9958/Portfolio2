@@ -1,58 +1,110 @@
-.about-container{
+.about-container {
     background-color: black;
     color: white;
     width: 100%;
     min-height: 100vh;
-    /* border: 2px solid white; */
     display: flex;
-    justify-content: space-around;
-}
-
-.overview-image{
-
-            width: 400px;
-                height: 400px;
-            border-radius: 50%;
-            box-shadow: 0 0 25px #ea580c;
-            margin-top: 160px;
-            box-shadow: 0 0 50px red;
-}
-
-.overview-img{
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-}
-
-.overview-text{
-    margin-top: 140px;
-    width: 30vw;
-    height: 60vh;
-    color:yellow;
+    flex-direction: column;
+    /* Default stack for smaller screens */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* Adds space between the image and text */
     padding: 20px;
-    /* background-color: #ea580c; */
+}
+
+.overview-image {
+    width: 300px;
+    /* Smaller size for better responsiveness */
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px red;
+}
+
+.overview-img {
+    width: 100%;
+    /* Matches parent dimensions */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Ensures image is properly scaled */
+}
+
+.overview-text {
+    width: 90%;
+    /* Use percentage for flexibility */
+    max-width: 600px;
+    /* Limits width on large screens */
+    color: yellow;
+    padding: 20px;
     border: 2px solid #ea580c;
-    border-radius: 10%;
+    border-radius: 10px;
     box-shadow: 0 0 50px red;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-family:Calibri;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+    /* Centers text for better readability */
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    /* Centers content horizontally */
+    /* padding: 10px; */
 }
-.overview{
+
+.overview {
     background-color: black;
     color: #ea580c;
-    font-size: 50px;
+    font-size: 40px;
 }
+
 .styled-hr {
     border: 2px solid #ea580c;
     height: 1px;
     background-color: #ea580c;
+    margin: 10px auto;
+    /* Centers the line */
+    width: 50%;
+}
 
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        /* Aligns side-by-side for larger screens */
+        gap: 40px;
+        /* Adds space between image and text */
+    }
+
+    .overview-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .overview-text {
+        width: 45%;
+        /* Restrict width for better layout */
+        text-align: left;
+        /* Align text to the left for readability */
+    }
+}
+
+@media (min-width: 1024px) {
+    .overview-image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .overview-text {
+        font-size: 18px;
+        line-height: 1.6;
+        /* Improves readability */
+    }
+
+    .overview {
+        font-size: 50px;
+    }
 }
