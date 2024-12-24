@@ -7,7 +7,7 @@ const projects=[
         name:'Doctor Appointment System',
         path:`${doctorAppointment}`,
         description:`A web-based application to simplify medical appointment management. Patients can view doctor profiles, book appointments, and download a confirmation slip with appointment details. The system ensures convenience and secure data handling for both patients and healthcare providers.`,
-        livelink:`/`,
+        livelink:`https://doctor-appointment-system-ksrf.onrender.com/`,
     },
     {
         name:'Sudoku',
@@ -19,7 +19,7 @@ const projects=[
         name:'Portfolio',
         path:`${portfoilio}`,
         description:`A dynamic and visually appealing online portfolio showcasing my skills, projects, and achievements. It highlights my expertise in web development, competitive programming through interactive project displays and detailed descriptions. The portfolio includes sections such as my technical skills, project showcases, and educational background. It’s designed to provide an intuitive navigation experience, with clear project explanations, links to GitHub repositories, and live demos where applicable. The portfolio serves as a comprehensive representation of my capabilities and serves as a platform for potential employers or collaborators to explore my work.`,
-        livelink:`/`,
+        livelink:`https://portfolio2-p1mz.vercel.app/`,
     },
 
     
