@@ -10,7 +10,10 @@
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
     /* Smooth transitions */
+
+    z-index: 20;
 }
 
 .skill-card:hover {

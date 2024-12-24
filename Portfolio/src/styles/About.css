@@ -19,6 +19,7 @@
     height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 50px red;
+    z-index: 20;
 }
 
 .overview-img {

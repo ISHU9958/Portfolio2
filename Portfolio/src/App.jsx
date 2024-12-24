@@ -17,7 +17,7 @@ const App = () => {
 
       <Navigation />
 
-      <ParticlesComponent id='particle'></ParticlesComponent>
+      <ParticlesComponent id='particle-canvas' ></ParticlesComponent>
       <section id="home">
         <Home></Home>
       </section>

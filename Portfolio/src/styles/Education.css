@@ -43,6 +43,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     /* Prevents content overflow */
+
+    position: relative;
 }
 
 .education-card:hover {

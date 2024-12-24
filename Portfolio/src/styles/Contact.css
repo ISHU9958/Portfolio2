@@ -12,6 +12,8 @@
     max-width: 800px;
     margin: auto;
     border: 2px solid #ff6600;
+    position: relative;
+    
 }
 
 .contact-heading {
@@ -30,6 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
 }
 
 .contact-input,
@@ -41,6 +44,7 @@
     border: 2px solid #ff6600;
     border-radius: 8px;
     outline: none;
+    z-index: 20;
 }
 
 .contact-input::placeholder,
@@ -62,6 +66,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 20;
 }
 
 .contact-button:hover {
