@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../styles/Home.css'
 import MyPhoto from '../assets/MyPhoto.png';
 import resumePdf from '../assets/IshuResume.pdf';
-
+import Typewriter from 'typewriter-effect';
 const Home = () => {
 
+    
+
+    
     const handleResumeDownload = () => {
     
         const link = document.createElement('a');
@@ -25,7 +28,19 @@ const Home = () => {
         <div className='home-container'>
             <div className="info-container">
                 <h1 className='first-heading info'>Hi, It's <span style={{ color: '#ea580c' ,fontFamily:'cursive'}}>Ishu</span></h1>
-                <h4 className='second-heading info'>I'm a Software Engineer</h4>
+                <h4 className='second-heading info'>
+                    <span>I'm a</span> 
+                    <h2 className='typewriter-text'>
+                        <Typewriter
+                            options={{
+                                strings: [`Software Engineer!`, `Mern Developer!`],
+                                autoStart: true,
+                                loop: true,
+
+                            }}
+                        />
+                    </h2>
+                </h4>
                 <div className="social-media-icons info">
                     <i className="fa-brands fa-github icon" onClick={()=>{
                         const link = document.createElement('a');
